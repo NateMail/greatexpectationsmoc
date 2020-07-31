@@ -24,11 +24,11 @@ body {
   .footer__heading {
     color: black; }
 
-.middle {
+.about {
   background-color: #ccedd2;
   height: 100vh;
   width: 100vw; }
-  .middle__heading {
+  .about__heading {
     color: black; }
 
 .header {
