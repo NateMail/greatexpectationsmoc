@@ -11,7 +11,7 @@ const Nav = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#footer">Pricing</a>
+          <a href="#pricing">Pricing</a>
         </li>
         <li>
           <a href="#footer">Contact</a>

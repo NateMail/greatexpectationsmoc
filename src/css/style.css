@@ -17,18 +17,25 @@ body {
   background-color: #ccedd2;
   color: white; }
 
-.footer {
-  background-color: #655c56;
-  height: 50vh;
-  width: 100vw; }
-  .footer__heading {
-    color: black; }
-
 .about {
   background-color: #ccedd2;
   height: 100vh;
   width: 100vw; }
   .about__heading {
+    color: black; }
+
+.contact {
+  background-color: #94d3ac;
+  height: 100vh;
+  width: 100vw; }
+  .contact__heading {
+    color: black; }
+
+.footer {
+  background-color: #655c56;
+  height: 50vh;
+  width: 100vw; }
+  .footer__heading {
     color: black; }
 
 .header {
@@ -85,6 +92,13 @@ body {
     transform-origin: right;
     transition: all 0.5s;
     width: 100%; }
+
+.pricing {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw; }
+  .pricing__heading {
+    color: black; }
 
 .App {
   overflow: hidden; }
