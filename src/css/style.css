@@ -43,7 +43,7 @@ body {
   .nav ul {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0.5rem;
     padding: 0; }
   .nav ul li {
     list-style: none;
@@ -52,14 +52,18 @@ body {
   .nav ul li a {
     color: #3d3d3d;
     display: block;
-    font-size: 22px;
-    padding: 10px 15px;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
     position: relative;
     text-decoration: none; }
+  .nav ul li a:hover {
+    background-color: #f5f3ed;
+    color: #655c56;
+    transform: scale(1.2); }
   .nav ul li a:before {
     background-color: #3d3d3d;
     content: "";
-    height: 2px;
+    height: 0.2rem;
     left: 0;
     position: absolute;
     top: 0;
@@ -74,7 +78,7 @@ body {
     background-color: #3d3d3d;
     bottom: 0;
     content: "";
-    height: 2px;
+    height: 0.2rem;
     left: 0;
     position: absolute;
     transform: scaleX(0);
