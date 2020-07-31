@@ -1,16 +1,12 @@
 import React from "react";
-import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Middle from "./components/Middle";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
-      <div>
-        <a href="/" className="btn btn--white btn--animated">
-          Test Button
-        </a>
-      </div>
+      <Header />
       <Middle />
       <Footer />
     </div>
