@@ -24,7 +24,8 @@
     background-color: transparent; }
   100% {
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 0.3rem; } }
+    border-radius: 0.3rem;
+    width: 100%; } }
 
 *,
 *::after,
@@ -46,11 +47,7 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
-  @media only screen and (max-width: 56.25em) {
-    body {
-      padding: 0; } }
+  box-sizing: border-box; }
 
 ::selection {
   background-color: #ccedd2;
@@ -87,7 +84,8 @@ body {
 
 .about {
   background-color: #ccedd2;
-  height: 100vh;
+  height: fit-content;
+  padding: 1rem;
   width: 100vw; }
   .about__heading {
     color: black; }
@@ -140,6 +138,7 @@ body {
   background-color: #e3e1e4;
   font-family: "IM Fell Great Primer", serif;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
