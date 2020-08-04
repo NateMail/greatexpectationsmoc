@@ -20,6 +20,11 @@
     padding: 1rem 1.5rem;
     position: relative;
     text-decoration: none;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+      padding: 0rem 0.5rem;
+    }
   }
 
   ul li a:hover {

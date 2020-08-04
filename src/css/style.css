@@ -63,6 +63,10 @@ body {
     padding: 1rem 1.5rem;
     position: relative;
     text-decoration: none; }
+    @media only screen and (max-width: 37.5em) {
+      .nav ul li a {
+        font-size: 1.5rem;
+        padding: 0rem 0.5rem; } }
   .nav ul li a:hover {
     background-color: #f5f3ed;
     color: #655c56;
