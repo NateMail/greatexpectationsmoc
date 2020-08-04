@@ -49,6 +49,7 @@ html {
 body {
   background-color: #ededed;
   box-sizing: border-box;
+  font-family: "IM Fell Great Primer", serif;
   padding: 1rem; }
   @media only screen and (max-width: 56.25em) {
     body {
@@ -89,7 +90,6 @@ body {
 
 .about {
   background-color: #ccedd2;
-  font-family: "IM Fell Great Primer", serif;
   height: fit-content;
   padding: 1rem;
   width: 100vw; }
@@ -159,7 +159,6 @@ body {
 
 .nav {
   background-color: #e3e1e4;
-  font-family: "IM Fell Great Primer", serif;
   left: 0;
   overflow: hidden;
   position: fixed;

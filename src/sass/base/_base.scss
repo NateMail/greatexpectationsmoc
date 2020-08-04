@@ -29,6 +29,7 @@ html {
 body {
   background-color: $color-backgound-body;
   box-sizing: border-box;
+  font-family: "IM Fell Great Primer", serif;
   padding: 1rem;
 
   @include respond(tab-port) {
