@@ -1,5 +1,11 @@
 .nav {
   font-family: "IM Fell Great Primer", serif;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -22,8 +28,8 @@
     text-decoration: none;
 
     @include respond(phone) {
-      font-size: 1.5rem;
-      padding: 0rem 0.5rem;
+      justify-content: space-between;
+      padding: 0rem 0rem;
     }
   }
 
@@ -63,5 +69,11 @@
     transform-origin: right;
     transition: all 0.5s;
     width: 100%;
+  }
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    ul li a:hover {
+      transform: scale(1);
+    }
   }
 }

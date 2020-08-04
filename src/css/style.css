@@ -8,10 +8,22 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 ::selection {
   background-color: #ccedd2;
@@ -40,13 +52,19 @@ body {
 
 .header {
   background-color: #fff;
+  margin-top: 5.5rem;
   height: 50vh;
   width: 100vw; }
   .header__heading {
     color: black; }
 
 .nav {
-  font-family: "IM Fell Great Primer", serif; }
+  font-family: "IM Fell Great Primer", serif;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
   .nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -65,8 +83,8 @@ body {
     text-decoration: none; }
     @media only screen and (max-width: 37.5em) {
       .nav ul li a {
-        font-size: 1.5rem;
-        padding: 0rem 0.5rem; } }
+        justify-content: space-between;
+        padding: 0rem 0rem; } }
   .nav ul li a:hover {
     background-color: #f5f3ed;
     color: #655c56;
@@ -96,6 +114,9 @@ body {
     transform-origin: right;
     transition: all 0.5s;
     width: 100%; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .nav ul li a:hover {
+      transform: scale(1); } }
 
 .pricing {
   background-color: #fff;
