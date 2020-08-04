@@ -25,7 +25,7 @@
   100% {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0.3rem;
-    width: 100%; } }
+    text-align: center; } }
 
 *,
 *::after,
@@ -47,7 +47,11 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 ::selection {
   background-color: #ccedd2;
@@ -68,7 +72,7 @@ body {
     letter-spacing: 1.5rem; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 4rem;
+        font-size: 3rem;
         letter-spacing: 0.5rem; } }
   .heading-primary--sub {
     animation: moveInBottom 3s ease-in-out;
@@ -84,14 +88,26 @@ body {
 
 .about {
   background-color: #ccedd2;
-  height: fit-content;
+  height: 50vh;
   padding: 1rem;
   width: 100vw; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      height: fit-content; } }
   .about__heading {
-    color: black; }
+    color: black;
+    font-size: large;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase; }
   .about__pic {
+    float: right;
     height: 20rem;
+    margin: 0.5rem 3rem;
     width: 20rem; }
+  .about__text {
+    height: 100%;
+    hyphens: auto; }
 
 .contact {
   background-color: #94d3ac;

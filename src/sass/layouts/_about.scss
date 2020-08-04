@@ -1,15 +1,30 @@
 .about {
   background-color: $color-primary;
-  height: fit-content;
+  height: 50vh;
   padding: 1rem;
   width: 100vw;
 
+  @include respond(phone) {
+    height: fit-content;
+  }
+
   &__heading {
     color: black;
+    font-size: large;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__pic {
+    float: right;
     height: 20rem;
+    margin: 0.5rem 3rem;
     width: 20rem;
+  }
+
+  &__text {
+    height: 100%;
+    hyphens: auto;
   }
 }

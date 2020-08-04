@@ -4,10 +4,10 @@ import defaultAbout from "../photos/about/defaultAbout.jpg";
 const About = () => {
   return (
     <div className="about" id="about">
-      <h1 className="about__heading">About</h1>
+      <h1 className="about__heading">About Us</h1>
 
       <img src={defaultAbout} alt="dog" className="about__pic" />
-      <p>
+      <p className="about__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium
         dui in risus facilisis lacinia. Maecenas convallis lectus eu tincidunt
         pellentesque. Fusce quis sem viverra ex dictum placerat quis ut felis.
@@ -47,7 +47,22 @@ const About = () => {
         orci luctus et ultrices posuere cubilia curae; Nam condimentum risus vel
         mauris hendrerit vulputate sit amet ut lectus. Duis sagittis, justo vel
         accumsan dignissim, nisl libero gravida felis, vel iaculis diam risus id
-        leo.
+        leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
+        lacus et velit bibendum dictum. Curabitur at enim consectetur, accumsan
+        ante vel, lobortis purus. Cras finibus ipsum sit amet metus tristique
+        fringilla. Vestibulum viverra auctor sem ac rutrum. Praesent porta nisi
+        at risus finibus, ut sagittis libero lacinia. Curabitur ac nulla mauris.
+        Aenean et odio sollicitudin, egestas orci vitae, aliquet turpis.
+        Pellentesque aliquam est augue, ut facilisis felis cursus et. Nunc
+        facilisis, nisi sed facilisis lobortis, diam est consequat velit, eget
+        finibus nibh urna quis tellus. Fusce scelerisque viverra dolor, eu
+        efficitur nisi porta nec. Ut sed feugiat metus. Nam at leo faucibus,
+        porttitor sem eget, porttitor est. Nulla consectetur ut orci non
+        dignissim. Etiam ante diam, convallis quis sodales quis, pulvinar nec
+        ante. Nam blandit felis vitae diam egestas congue. Ut varius ex tempus,
+        ultricies est eget, porta felis. Mauris fringilla placerat est ac
+        posuere. Aenean tincidunt urna in ullamcorper imperdiet. Donec at
+        convallis orci.
       </p>
     </div>
   );
