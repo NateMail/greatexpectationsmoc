@@ -1,4 +1,5 @@
 .nav {
+  background-color: #e3e1e4;
   font-family: "IM Fell Great Primer", serif;
   left: 0;
   position: fixed;
@@ -35,7 +36,7 @@
 
   ul li a:hover {
     background-color: $color-nav-background;
-    color: $color-footer;
+    color: $color-primary-dark;
     transform: scale(1.2);
   }
 

@@ -59,6 +59,7 @@ body {
     color: black; }
 
 .nav {
+  background-color: #e3e1e4;
   font-family: "IM Fell Great Primer", serif;
   left: 0;
   position: fixed;
@@ -87,7 +88,7 @@ body {
         padding: 0rem 0rem; } }
   .nav ul li a:hover {
     background-color: #f5f3ed;
-    color: #655c56;
+    color: #94d3ac;
     transform: scale(1.2); }
   .nav ul li a:before {
     background-color: #3d3d3d;
