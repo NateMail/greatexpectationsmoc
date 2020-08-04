@@ -112,6 +112,8 @@ body {
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
     left: 50%;
     position: absolute;
     text-align: center;
