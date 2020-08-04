@@ -1,1 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap");
+
+.heading-primary {
+  color: $color-primary;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+
+  &--main {
+    animation: moveInTop 3s ease-in-out;
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+
+  &--sub {
+    animation: moveInBottom 3s ease-in-out;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.74rem;
+    margin-top: 2rem;
+
+    @include respond(phone) {
+      font-size: 0.5rem;
+      letter-spacing: 0.25rem;
+    }
+  }
+}

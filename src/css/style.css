@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap");
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  80% {
+    transform: translateY(20%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  80% {
+    transform: translateY(-20%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+
 *,
 *::after,
 *::before {
@@ -29,6 +49,32 @@ body {
   background-color: #ccedd2;
   color: white; }
 
+.heading-primary {
+  color: #ccedd2;
+  margin-bottom: 3rem;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    animation: moveInTop 3s ease-in-out;
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 4rem;
+        letter-spacing: 0.5rem; } }
+  .heading-primary--sub {
+    animation: moveInBottom 3s ease-in-out;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.74rem;
+    margin-top: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 0.5rem;
+        letter-spacing: 0.25rem; } }
+
 .about {
   background-color: #ccedd2;
   height: 100vh;
@@ -54,13 +100,24 @@ body {
   background: url("../photos/header/library.jpg");
   background-size: cover;
   margin-top: 5.5rem;
-  height: 50vh;
+  height: 70vh;
   width: 100vw; }
   @media only screen and (max-width: 37.5em) {
     .header {
       margin-top: 3.5rem; } }
-  .header__heading {
-    color: black; }
+  .header__logo-box {
+    left: 4rem;
+    position: absolute;
+    top: 10rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    transition: all 3s; }
 
 .nav {
   background-color: #e3e1e4;

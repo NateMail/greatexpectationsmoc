@@ -1,9 +1,20 @@
 import React from "react";
+import logo from "../photos/header/logo.jpg";
 
 const Header = () => {
   return (
     <div className="header">
-      <h1 className="header__heading">Header</h1>
+      <div className="header__logo-box">
+        <img src={logo} alt="Logo" className="header__logo" />
+      </div>
+      <div className="header__text-box">
+        <h1 className="heading-primary">
+          <span className="heading-primary--main">
+            Great Expectations Tutoring
+          </span>
+          <span className="heading-primary--sub">South Shore Tutoring</span>
+        </h1>
+      </div>
     </div>
   );
 };
