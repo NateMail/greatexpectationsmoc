@@ -91,6 +91,9 @@ body {
   width: 100vw; }
   .about__heading {
     color: black; }
+  .about__pic {
+    height: 20rem;
+    width: 20rem; }
 
 .contact {
   background-color: #94d3ac;
