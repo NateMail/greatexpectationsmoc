@@ -19,6 +19,13 @@
     opacity: 1;
     transform: translateY(0%); } }
 
+@keyframes text-box-bg {
+  0% {
+    background-color: transparent; }
+  100% {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.3rem; } }
+
 *,
 *::after,
 *::before {
@@ -51,8 +58,11 @@ body {
 
 .heading-primary {
   color: #ccedd2;
-  margin-bottom: 3rem;
+  margin: 3rem 5rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      margin: 1.5rem 3.5rem; } }
   .heading-primary--main {
     animation: moveInTop 3s ease-in-out;
     display: block;
@@ -112,7 +122,6 @@ body {
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
-    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 3px;
     left: 50%;
     position: absolute;
@@ -120,6 +129,9 @@ body {
     top: 40%;
     transform: translate(-50%, -50%);
     transition: all 3s; }
+  .header__text-box-bg {
+    animation: text-box-bg 3.1s ease-in forwards;
+    background-color: transparent; }
 
 .nav {
   background-color: #e3e1e4;

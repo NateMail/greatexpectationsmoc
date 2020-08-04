@@ -7,7 +7,7 @@ const Header = () => {
       <div className="header__logo-box">
         <img src={logo} alt="Logo" className="header__logo" />
       </div>
-      <div className="header__text-box">
+      <div className="header__text-box header__text-box-bg">
         <h1 className="heading-primary">
           <span className="heading-primary--main">
             Great Expectations Tutoring

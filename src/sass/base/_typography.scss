@@ -2,8 +2,12 @@
 
 .heading-primary {
   color: $color-primary;
-  margin-bottom: 3rem;
+  margin: 3rem 5rem;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    margin: 1.5rem 3.5rem;
+  }
 
   &--main {
     animation: moveInTop 3s ease-in-out;
