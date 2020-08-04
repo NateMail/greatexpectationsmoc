@@ -88,12 +88,10 @@ body {
 
 .about {
   background-color: #ccedd2;
-  height: 50vh;
+  font-family: "IM Fell Great Primer", serif;
+  height: fit-content;
   padding: 1rem;
   width: 100vw; }
-  @media only screen and (max-width: 37.5em) {
-    .about {
-      height: fit-content; } }
   .about__heading {
     color: black;
     font-size: large;
@@ -101,13 +99,21 @@ body {
     text-align: center;
     text-transform: uppercase; }
   .about__pic {
+    border-radius: 0.3rem;
     float: right;
-    height: 20rem;
+    height: 40rem;
     margin: 0.5rem 3rem;
-    width: 20rem; }
+    width: 40rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__pic {
+        margin: 0 auto; } }
   .about__text {
+    font-size: 2rem;
     height: 100%;
     hyphens: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .about__text {
+        font-size: 1.5rem; } }
 
 .contact {
   background-color: #94d3ac;
