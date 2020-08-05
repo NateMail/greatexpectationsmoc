@@ -2,12 +2,6 @@
   height: fit-content;
   width: 100vw;
 
-  &__heading {
-    color: $color-black;
-    font-size: 5rem;
-    text-align: center;
-  }
-
   &__box-1 {
     border-bottom: 5px $color-black solid;
     font-size: 1.5rem;
@@ -66,7 +60,12 @@
     font-size: 10rem;
   }
 
+  &__tertiary {
+    font-size: 5rem;
+  }
+
   &__text {
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -75,12 +74,11 @@
     border-radius: 0.3rem;
     box-shadow: 1rem 0.5rem 0.5rem $color-black;
     margin: 0 auto;
-    height: 20rem;
+    height: 25rem;
     width: 20rem;
 
     &:hover {
       box-shadow: 1.2rem 0.7rem 0.7rem $color-black;
-      margin: 2rem 0;
       transform: scale(1.2);
     }
 
@@ -96,6 +94,9 @@
 
       &__item {
         color: $color-pale-yellow;
+        font-size: medium;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
     }
   }

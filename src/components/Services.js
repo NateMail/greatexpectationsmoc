@@ -9,7 +9,6 @@ import {
 const Services = () => {
   return (
     <div className="services" id="services">
-      <h1 className="services__heading">Services</h1>
       <div>
         <div className="services__box-1">
           <h3 className="services__tertiary">SAT Prep</h3>
