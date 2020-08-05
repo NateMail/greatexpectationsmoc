@@ -23,7 +23,7 @@
   0% {
     background-color: transparent; }
   100% {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(14, 30, 49, 0.8);
     border-radius: 0.3rem;
     text-align: center; } }
 
@@ -60,7 +60,7 @@ body {
   color: white; }
 
 .heading-primary {
-  color: #ccedd2;
+  color: #f7f7d2;
   margin: 3rem 5rem;
   text-transform: uppercase; }
   @media only screen and (max-width: 37.5em) {
@@ -89,7 +89,7 @@ body {
         letter-spacing: 0.25rem; } }
 
 .about {
-  background-color: #ccedd2;
+  background-color: #b9e9d5;
   height: 50rem;
   padding: 1rem;
   width: 100vw; }
@@ -104,19 +104,27 @@ body {
     text-transform: uppercase; }
   .about__float {
     display: block;
-    float: right; }
+    float: right;
+    margin: 0.5rem 0.3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__float {
+        align-items: center;
+        display: flex;
+        float: none;
+        justify-content: center; } }
   .about__pic-container {
     display: inline-block;
     margin: 0.5rem 3rem;
     text-align: center;
     vertical-align: center; }
-    @media only screen and (max-width: 37.5em) {
-      .about__pic-container {
-        margin: 1rem auto; } }
   .about__pic {
     border-radius: 0.3rem;
     height: 40rem;
     width: 40rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__pic {
+        border-right: 0.3rem;
+        margin: 0.5rem; } }
   .about__pic-label {
     display: block;
     font-size: 1.5rem; }
@@ -126,10 +134,9 @@ body {
     hyphens: auto; }
     @media only screen and (max-width: 37.5em) {
       .about__text {
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
 
 .contact {
-  background-color: #94d3ac;
   height: 100vh;
   width: 100vw; }
   .contact__heading {
@@ -170,7 +177,7 @@ body {
     background-color: transparent; }
 
 .nav {
-  background-color: #e3e1e4;
+  background-color: #0e1e31;
   left: 0;
   overflow: hidden;
   position: fixed;
@@ -187,7 +194,7 @@ body {
     text-align: center;
     width: 20%; }
   .nav ul li a {
-    color: #3d3d3d;
+    color: #f7f7d2;
     display: block;
     font-size: 2rem;
     padding: 1rem 1.5rem;
@@ -198,11 +205,11 @@ body {
         justify-content: space-between;
         padding: 0rem 0rem; } }
   .nav ul li a:hover {
-    background-color: #f5f3ed;
-    color: #94d3ac;
+    background-color: #02243a;
+    color: #f7f7d2;
     transform: scale(1.2); }
   .nav ul li a:before {
-    background-color: #3d3d3d;
+    background-color: #f7f7d2;
     content: "";
     height: 0.2rem;
     left: 0;
@@ -216,7 +223,7 @@ body {
   .nav ul li a:hover:after {
     transform: scaleX(1); }
   .nav ul li a:after {
-    background-color: #3d3d3d;
+    background-color: #f7f7d2;
     bottom: 0;
     content: "";
     height: 0.2rem;
@@ -231,14 +238,13 @@ body {
       transform: scale(1); } }
 
 .services {
-  background-color: #fff;
   height: 100vh;
   width: 100vw; }
   .services__heading {
     color: black; }
 
 .rates {
-  background-color: #fff;
+  background-color: #b9e9d5;
   height: 100vh;
   width: 100vw; }
   .rates__heading {

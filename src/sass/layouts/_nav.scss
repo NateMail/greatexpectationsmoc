@@ -1,5 +1,5 @@
 .nav {
-  background-color: #e3e1e4;
+  background-color: $color-navy;
   left: 0;
   overflow: hidden;
   position: fixed;
@@ -21,7 +21,7 @@
   }
 
   ul li a {
-    color: #3d3d3d;
+    color: $color-pale-yellow;
     display: block;
     font-size: 2rem;
     padding: 1rem 1.5rem;
@@ -35,13 +35,13 @@
   }
 
   ul li a:hover {
-    background-color: $color-nav-background;
-    color: $color-primary-dark;
+    background-color: #02243a;
+    color: $color-pale-yellow;
     transform: scale(1.2);
   }
 
   ul li a:before {
-    background-color: #3d3d3d;
+    background-color: $color-pale-yellow;
     content: "";
     height: 0.2rem;
     left: 0;
@@ -59,7 +59,7 @@
   }
 
   ul li a:after {
-    background-color: #3d3d3d;
+    background-color: $color-pale-yellow;
     bottom: 0;
     content: "";
     height: 0.2rem;
