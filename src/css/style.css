@@ -284,9 +284,6 @@ body {
   .services__heading {
     color: black; }
   .services__box {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     font-size: 1.5rem;
     height: 100%;
     padding: 2.5rem;
@@ -295,6 +292,18 @@ body {
     @media only screen and (max-width: 56.25em) {
       .services__box {
         padding: 2rem; } }
+  .services__text {
+    margin-bottom: 2rem; }
+  .services__card {
+    background-color: #0e1e31;
+    border-radius: 0.3rem; }
+    .services__card__header {
+      color: #f7f7d2;
+      font-size: large; }
+    .services__card__list {
+      list-style-type: none; }
+      .services__card__list__item {
+        color: #f7f7d2; }
 
 .rates {
   height: 100vh;

@@ -22,30 +22,44 @@ const Services = () => {
           </p>
           <div className="row">
             <div className="col-1-of-3">
-              <h4>College Admission Tests</h4>
-              <ul>
-                <li>SAT</li>
-                <li>ACT</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">
+                  College Admission Tests
+                </h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">SAT</li>
+                  <li className="services__card__list__item">ACT</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-3">
-              <h4>SAT Subject Tests</h4>
-              <ul>
-                <li>Literature/English</li>
-                <li>Math</li>
-                <li>U.S. History</li>
-                <li>World History</li>
-                <li>French</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">SAT Subject Tests</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">
+                    Literature/English
+                  </li>
+                  <li className="services__card__list__item">Math</li>
+                  <li className="services__card__list__item">U.S. History</li>
+                  <li className="services__card__list__item">World History</li>
+                  <li className="services__card__list__item">French</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-3">
-              <h4>Independent School Exams</h4>
-              <ul>
-                <li>ISEE</li>
-                <li>SSAT</li>
-                <li>HSPT (Catholic High School Entrance Exam)</li>
-                <li>ERB</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">
+                  Independent School Exams
+                </h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">ISEE</li>
+                  <li className="services__card__list__item">SSAT</li>
+                  <li className="services__card__list__item">
+                    HSPT (Catholic High School Entrance Exam)
+                  </li>
+                  <li className="services__card__list__item">ERB</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -62,30 +76,42 @@ const Services = () => {
           </p>
           <div className="row">
             <div className="col-1-of-4">
-              <h4>English (all levels)</h4>
-              <ul>
-                <li>Reading/Literature</li>
-                <li>Writing</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">English (all levels)</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">
+                    Reading/Literature
+                  </li>
+                  <li className="services__card__list__item">Writing</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-4">
-              <h4>Math</h4>
-              <ul>
-                <li>Elementary and Middle School</li>
-                <li>Algebra I</li>
-                <li>Geometry</li>
-                <li>Algebra II</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">Math</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">
+                    Elementary and Middle School
+                  </li>
+                  <li className="services__card__list__item">Algebra I</li>
+                  <li className="services__card__list__item">Geometry</li>
+                  <li className="services__card__list__item">Algebra II</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-4">
-              <h4>History (all levels)</h4>
-              <ul>
-                <li>World History</li>
-                <li>U.S. History</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">History (all levels)</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">World History</li>
+                  <li className="services__card__list__item">U.S. History</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-4">
-              <h4>French (all levels)</h4>
+              <div className="services__card">
+                <h4 className="services__card__header">French (all levels)</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -115,30 +141,42 @@ const Services = () => {
           </p>
           <div className="row">
             <div className="col-1-of-4">
-              <h4>English (all levels)</h4>
-              <ul>
-                <li>Reading/Literature</li>
-                <li>Writing</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">English (all levels)</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">
+                    Reading/Literature
+                  </li>
+                  <li className="services__card__list__item">Writing</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-4">
-              <h4>Math</h4>
-              <ul>
-                <li>Elementary and Middle School</li>
-                <li>Algebra I</li>
-                <li>Geometry</li>
-                <li>Algebra II</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">Math</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">
+                    Elementary and Middle School
+                  </li>
+                  <li className="services__card__list__item">Algebra I</li>
+                  <li className="services__card__list__item">Geometry</li>
+                  <li className="services__card__list__item">Algebra II</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-4">
-              <h4>History (all levels)</h4>
-              <ul>
-                <li>World History</li>
-                <li>U.S. History</li>
-              </ul>
+              <div className="services__card">
+                <h4 className="services__card__header">History (all levels)</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">World History</li>
+                  <li className="services__card__list__item">U.S. History</li>
+                </ul>
+              </div>
             </div>
             <div className="col-1-of-4">
-              <h4>French (all levels)</h4>
+              <div className="services__card">
+                <h4 className="services__card__header">French (all levels)</h4>
+              </div>
             </div>
           </div>
         </div>
