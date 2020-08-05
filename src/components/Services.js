@@ -11,9 +11,9 @@ const Services = () => {
     <div className="services" id="services">
       <h1 className="services__heading">Services</h1>
       <div>
-        <div className="services__box">
+        <div className="services__box-1">
           <h3 className="services__tertiary">SAT Prep</h3>
-          <TiEdit />
+          <TiEdit className="services__icon" />
           <p className="services__text">
             Great Expectations offers test preparation services that are
             customized to your student. Our tutors are experienced in working
@@ -65,9 +65,9 @@ const Services = () => {
         </div>
       </div>
       <div>
-        <div className="services__box">
+        <div className="services__box-2">
           <h3 className="services__tertiary">Subject Tutoring</h3>
-          <TiGlobeOutline />
+          <TiGlobeOutline className="services__icon" />
           <p className="services__text">
             Great Expectations offers subject tutoring in a variety of subjects.
             Our tutors have worked with students as young as 8 years old through
@@ -118,11 +118,11 @@ const Services = () => {
       </div>
 
       <div>
-        <div className="services__box">
+        <div className="services__box-3">
           <h3 className="services__tertiary">
             Remote/Hybrid Learning Assistance
           </h3>
-          <TiFlowSwitch />
+          <TiFlowSwitch className="services__icon" />
           <p className="services__text">
             This year, and practically overnight, our children’s lives (and ours
             along with them) were upended as students were sent home to engage
@@ -182,11 +182,11 @@ const Services = () => {
         </div>
       </div>
       <div>
-        <div className="services__box">
+        <div className="services__box-4">
           <h3 className="services__tertiary">
             Application Essays/Personal Statements
           </h3>
-          <TiDocumentText />
+          <TiDocumentText className="services__icon" />
           <p className="services__text">
             Writing an application essay, whether for admission to an
             independent lower school or to the college of your dreams, can be a

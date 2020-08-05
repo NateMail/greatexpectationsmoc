@@ -89,7 +89,6 @@ body {
         letter-spacing: 0.25rem; } }
 
 .about {
-  background-color: #b9e9d5;
   height: 50rem;
   padding: 1rem;
   width: 100vw; }
@@ -137,7 +136,6 @@ body {
         font-size: 2rem; } }
 
 .contact {
-  background-color: #b9e9d5;
   height: 100vh;
   width: 100vw; }
   .contact__heading {
@@ -182,10 +180,10 @@ body {
   max-width: 114rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -197,11 +195,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media only screen and (max-width: 37.5em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -282,30 +280,78 @@ body {
   height: fit-content;
   width: 100vw; }
   .services__heading {
-    color: black; }
-  .services__box {
+    color: #000;
+    font-size: 5rem;
+    text-align: center; }
+  .services__box-1 {
+    border-bottom: 5px #000 solid;
     font-size: 1.5rem;
     height: 100%;
     padding: 2.5rem;
     text-align: center;
     width: 100%; }
     @media only screen and (max-width: 56.25em) {
-      .services__box {
+      .services__box-1 {
         padding: 2rem; } }
+  .services__box-2 {
+    background-color: #b9e9d5;
+    border-bottom: 5px #000 solid;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .services__box-2 {
+        padding: 2rem; } }
+  .services__box-3 {
+    border-bottom: 5px #000 solid;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .services__box-3 {
+        padding: 2rem; } }
+  .services__box-4 {
+    background-color: #b9e9d5;
+    border-bottom: 5px #000 solid;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .services__box-4 {
+        padding: 2rem; } }
+  .services__icon {
+    font-size: 10rem; }
   .services__text {
     margin-bottom: 2rem; }
   .services__card {
     background-color: #0e1e31;
-    border-radius: 0.3rem; }
+    border-radius: 0.3rem;
+    box-shadow: 1rem 0.5rem 0.5rem #000;
+    margin: 0 auto;
+    height: 20rem;
+    width: 20rem; }
+    .services__card:hover {
+      box-shadow: 1.2rem 0.7rem 0.7rem #000;
+      margin: 2rem 0;
+      transform: scale(1.2); }
     .services__card__header {
       color: #f7f7d2;
-      font-size: large; }
+      border-bottom: 1px solid #f7f7d2;
+      font-size: large;
+      margin-bottom: 1rem; }
     .services__card__list {
       list-style-type: none; }
       .services__card__list__item {
         color: #f7f7d2; }
 
 .rates {
+  background-color: #b9e9d5;
   height: 100vh;
   width: 100vw; }
   .rates__heading {

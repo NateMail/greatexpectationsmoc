@@ -3,10 +3,13 @@
   width: 100vw;
 
   &__heading {
-    color: black;
+    color: $color-black;
+    font-size: 5rem;
+    text-align: center;
   }
 
-  &__box {
+  &__box-1 {
+    border-bottom: 5px $color-black solid;
     font-size: 1.5rem;
     height: 100%;
     padding: 2.5rem;
@@ -18,6 +21,51 @@
     }
   }
 
+  &__box-2 {
+    background-color: $color-mint;
+    border-bottom: 5px $color-black solid;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
+  }
+
+  &__box-3 {
+    border-bottom: 5px $color-black solid;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
+  }
+
+  &__box-4 {
+    background-color: $color-mint;
+    border-bottom: 5px $color-black solid;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
+  }
+
+  &__icon {
+    font-size: 10rem;
+  }
+
   &__text {
     margin-bottom: 2rem;
   }
@@ -25,10 +73,22 @@
   &__card {
     background-color: $color-navy;
     border-radius: 0.3rem;
+    box-shadow: 1rem 0.5rem 0.5rem $color-black;
+    margin: 0 auto;
+    height: 20rem;
+    width: 20rem;
+
+    &:hover {
+      box-shadow: 1.2rem 0.7rem 0.7rem $color-black;
+      margin: 2rem 0;
+      transform: scale(1.2);
+    }
 
     &__header {
       color: $color-pale-yellow;
+      border-bottom: 1px solid $color-pale-yellow;
       font-size: large;
+      margin-bottom: 1rem;
     }
 
     &__list {
