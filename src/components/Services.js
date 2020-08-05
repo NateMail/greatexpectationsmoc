@@ -1,5 +1,5 @@
 import React from "react";
-import { TiEdit, TiGlobeOutline, TiDocumentText } from 'react-icons/ti';
+import { TiEdit, TiGlobeOutline, TiDocumentText, TiFlowSwitch } from 'react-icons/ti';
 
 const Services = () => {
   return (
@@ -7,7 +7,7 @@ const Services = () => {
       <h1 className="services__heading">Services</h1>
 
       <div className="row">
-        <div className="col-1-of-3">
+        <div className="col-1-of-4">
           <div className="services__box">
             
             <h3 className="services__tertiary">SAT Prep</h3>
@@ -39,7 +39,7 @@ const Services = () => {
             </ul>
           </div>
         </div>
-         <div className="col-1-of-3">
+         <div className="col-1-of-4">
           <div className="services__box">
             <h3 className="services__tertiary">Subject Tutoring</h3>
             <TiGlobeOutline />
@@ -74,10 +74,10 @@ const Services = () => {
             </ul>
           </div>
         </div>
-         <div className="col-1-of-3">
+         <div className="col-1-of-4">
           <div className="services__box">
             <h3 className="services__tertiary">Remote/Hybrid Learning Assistance</h3>
-            <TiDocumentText />
+            <TiFlowSwitch />
             <p className="services__text">
              This year, and practically overnight, our children’s lives (and ours along with them) were upended as students were sent home to engage in remote learning.  With many school systems contemplating remote learning for the upcoming school year, and with most others having students return to in-person classes only a few days each week, many parents again find themselves trying to balance their own work-from-home needs with trying to remember things like the Pythagorean theorem as they help their children learn from home.  By assisting your students with their studies on those days that they are learning from home, Great Expectations can help you concentrate on your work.  Leave the teaching to us.  You do your job and let us do ours.  Remote/hybrid learning assistance is currently available for the following subjects and for students in elementary school through high school:
             </p>
@@ -109,6 +109,15 @@ const Services = () => {
             </ul>
           </div>
         </div>
+          <div className="col-1-of-4">
+          <div className="services__box">
+            <h3 className="services__tertiary">Application Essays/Personal Statements</h3>
+            <TiDocumentText />
+            <p className="services__text">
+              Writing an application essay, whether for admission to an independent lower school or to the college of your dreams, can be a daunting task.  Great Expectations has worked with students at all levels  - - from Grades 5 through 12 - - to assist them in brainstorming and painstakingly revising their application essays/personal statements. 
+            </p>
+          </div>
+          </div>
       </div>
     </div>
   );
