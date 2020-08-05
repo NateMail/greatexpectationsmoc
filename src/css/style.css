@@ -137,6 +137,7 @@ body {
         font-size: 2rem; } }
 
 .contact {
+  background-color: #b9e9d5;
   height: 100vh;
   width: 100vw; }
   .contact__heading {
@@ -244,7 +245,6 @@ body {
     color: black; }
 
 .rates {
-  background-color: #b9e9d5;
   height: 100vh;
   width: 100vw; }
   .rates__heading {
