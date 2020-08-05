@@ -90,7 +90,7 @@ body {
 
 .about {
   background-color: #ccedd2;
-  height: fit-content;
+  height: 50rem;
   padding: 1rem;
   width: 100vw; }
   .about__heading {
@@ -223,6 +223,13 @@ body {
   height: 100vh;
   width: 100vw; }
   .services__heading {
+    color: black; }
+
+.rates {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw; }
+  .rates__heading {
     color: black; }
 
 .App {

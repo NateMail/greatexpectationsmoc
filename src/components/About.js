@@ -8,61 +8,31 @@ const About = () => {
 
       <img src={defaultAbout} alt="dog" className="about__pic" />
       <p className="about__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium
-        dui in risus facilisis lacinia. Maecenas convallis lectus eu tincidunt
-        pellentesque. Fusce quis sem viverra ex dictum placerat quis ut felis.
-        Praesent ac porttitor turpis. Fusce at porta felis, in pellentesque
-        ante. Duis condimentum quam viverra mi auctor lacinia. Nunc libero orci,
-        molestie id pulvinar non, iaculis quis ante. Suspendisse nunc enim,
-        imperdiet nec massa non, scelerisque porttitor enim. Proin in nisi sed
-        ligula pulvinar mattis a suscipit nibh. Aliquam nec aliquet mauris. Nam
-        justo lacus, luctus et leo sit amet, rutrum congue mi. Donec fermentum
-        turpis sed felis efficitur venenatis. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas.
-        Suspendisse pulvinar augue elit. Vestibulum condimentum justo lectus, id
-        mollis eros gravida in. Integer malesuada nunc id odio accumsan, id
-        fringilla urna varius. Donec fringilla tristique condimentum. Fusce
-        consequat sit amet augue ac aliquet. Vivamus non sollicitudin sapien.
-        Donec imperdiet leo at dapibus condimentum. Vivamus dapibus viverra
-        felis, ut condimentum libero. Donec fringilla ac odio sed rhoncus.
-        Aliquam erat volutpat. Vivamus nisi leo, scelerisque et elit vel, mattis
-        eleifend risus. Quisque et tempor ante. Maecenas blandit non est sit
-        amet vulputate. Suspendisse tempus feugiat purus sed imperdiet. Cras
-        felis tellus, feugiat ac convallis nec, congue vel massa. Aliquam
-        sollicitudin iaculis blandit. Nulla est felis, posuere quis elementum
-        et, condimentum sed risus. Morbi ut feugiat elit. Duis pharetra orci sit
-        amet felis bibendum, et malesuada ipsum tincidunt. Nullam ut dolor
-        faucibus, egestas mauris ac, lacinia arcu. Etiam ultricies egestas
-        risus, sit amet fermentum justo suscipit ac. Curabitur purus turpis,
-        rutrum in tempor vitae, imperdiet sed orci. Sed vel mi et nulla pretium
-        tincidunt. Mauris blandit accumsan nisl, sit amet varius mauris
-        ultricies fermentum. Proin vestibulum tristique tempor. Fusce urna odio,
-        laoreet id urna vel, sollicitudin volutpat ex. Fusce vel diam ac nibh
-        laoreet tempus. Nunc tristique risus non faucibus imperdiet. In vel elit
-        quis nisi maximus laoreet vitae eu nibh. Aenean cursus sollicitudin
-        accumsan. Sed sagittis est sit amet sem scelerisque vehicula ut at erat.
-        Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Sed quis rutrum urna. Suspendisse in lectus nec mi
-        tristique aliquam non non leo. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia curae; Nam condimentum risus vel
-        mauris hendrerit vulputate sit amet ut lectus. Duis sagittis, justo vel
-        accumsan dignissim, nisl libero gravida felis, vel iaculis diam risus id
-        leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
-        lacus et velit bibendum dictum. Curabitur at enim consectetur, accumsan
-        ante vel, lobortis purus. Cras finibus ipsum sit amet metus tristique
-        fringilla. Vestibulum viverra auctor sem ac rutrum. Praesent porta nisi
-        at risus finibus, ut sagittis libero lacinia. Curabitur ac nulla mauris.
-        Aenean et odio sollicitudin, egestas orci vitae, aliquet turpis.
-        Pellentesque aliquam est augue, ut facilisis felis cursus et. Nunc
-        facilisis, nisi sed facilisis lobortis, diam est consequat velit, eget
-        finibus nibh urna quis tellus. Fusce scelerisque viverra dolor, eu
-        efficitur nisi porta nec. Ut sed feugiat metus. Nam at leo faucibus,
-        porttitor sem eget, porttitor est. Nulla consectetur ut orci non
-        dignissim. Etiam ante diam, convallis quis sodales quis, pulvinar nec
-        ante. Nam blandit felis vitae diam egestas congue. Ut varius ex tempus,
-        ultricies est eget, porta felis. Mauris fringilla placerat est ac
-        posuere. Aenean tincidunt urna in ullamcorper imperdiet. Donec at
-        convallis orci.
+        Allison Walsh is the co-founder of Great Expectations. Allison brings
+        more than 20 years of tutoring and test prep experience to Great
+        Expectations, having begun her career as a subject tutor at her alma
+        mater, The College of William and Mary. After graduating from William
+        and Mary, Allison began working as an SAT prep classroom instructor for
+        a local test prep company, teaching SAT prep classes at high schools
+        throughout the South Shore. From there, she expanded into in-home
+        tutoring for SATs, ACTs, and independent school entrance exams like the
+        ISEE, SSAT and HSPT (also known as the Catholic High School Entrance
+        Exam). Allison also frequently helps her test prep clients with their
+        application essays/personal statements. With the advent of remote
+        learning this year, Allison has also assisted students with academic
+        subjects including middle and high school math, English, and social
+        studies/history. Allison understands the South Shore, its local schools
+        and its students well, having worked with students from almost every
+        town and middle school/high school (public and private) over the years.
+        Allison grew up in South Weymouth and graduated from Notre Dame Academy
+        in Hingham. She holds a B.A. from The College of William and Mary and an
+        M.A./J.D. from Syracuse University. She is currently enrolled in the
+        College Counseling certificate program at Rice University. In her spare
+        time, Allison enjoys spending time with her husband, two step-children,
+        their dog and two cats. She is also actively involved in the community
+        as a member of the Board Nominating and Development Committee of the
+        Girl Scouts of Eastern Massachusetts and as a sustaining member of The
+        Junior League of Boston.
       </p>
     </div>
   );
