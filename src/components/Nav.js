@@ -11,7 +11,10 @@ const Nav = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#pricing">Pricing</a>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#rates">Rates</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
