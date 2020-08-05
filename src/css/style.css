@@ -93,21 +93,33 @@ body {
   height: 50rem;
   padding: 1rem;
   width: 100vw; }
+  @media only screen and (max-width: 75em) {
+    .about {
+      height: fit-content; } }
   .about__heading {
     color: black;
     font-size: large;
     margin: 1rem;
     text-align: center;
     text-transform: uppercase; }
+  .about__float {
+    display: block;
+    float: right; }
+  .about__pic-container {
+    display: inline-block;
+    margin: 0.5rem 3rem;
+    text-align: center;
+    vertical-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .about__pic-container {
+        margin: 1rem auto; } }
   .about__pic {
     border-radius: 0.3rem;
-    float: right;
     height: 40rem;
-    margin: 0.5rem 3rem;
     width: 40rem; }
-    @media only screen and (max-width: 37.5em) {
-      .about__pic {
-        margin: 0 auto; } }
+  .about__pic-label {
+    display: block;
+    font-size: 1.5rem; }
   .about__text {
     font-size: 2rem;
     height: 100%;

@@ -4,6 +4,10 @@
   padding: 1rem;
   width: 100vw;
 
+  @include respond(tab-land) {
+    height: fit-content;
+  }
+
   &__heading {
     color: black;
     font-size: large;
@@ -12,16 +16,30 @@
     text-transform: uppercase;
   }
 
+  &__float {
+    display: block;
+    float: right;
+  }
+
+  &__pic-container {
+    display: inline-block;
+    margin: 0.5rem 3rem;
+    text-align: center;
+    vertical-align: center;
+    @include respond(phone) {
+      margin: 1rem auto;
+    }
+  }
+
   &__pic {
     border-radius: 0.3rem;
-    float: right;
     height: 40rem;
-    margin: 0.5rem 3rem;
     width: 40rem;
+  }
 
-    @include respond(phone) {
-      margin: 0 auto;
-    }
+  &__pic-label {
+    display: block;
+    font-size: 1.5rem;
   }
 
   &__text {

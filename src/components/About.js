@@ -5,8 +5,12 @@ const About = () => {
   return (
     <div className="about" id="about">
       <h1 className="about__heading">About Us</h1>
-
-      <img src={defaultAbout} alt="dog" className="about__pic" />
+      <div className="about__float">
+        <div className="about__pic-container">
+          <img src={defaultAbout} alt="dog" className="about__pic" />
+          <span className="about__pic-label">Founder Allison Walsh</span>
+        </div>
+      </div>
       <p className="about__text">
         Allison Walsh is the co-founder of Great Expectations. Allison brings
         more than 20 years of tutoring and test prep experience to Great
