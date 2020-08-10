@@ -155,18 +155,25 @@ body {
         width: 100%; } }
     .contact__form__heading {
       color: #0e1e31;
-      font-size: large;
+      font-size: 7rem;
       margin-bottom: 1rem;
-      padding: 0 47%; }
+      text-align: center; }
     .contact__form__button {
+      background-color: #f7f7d2;
+      border-radius: 2px;
+      border-color: none;
+      color: #0e1e31;
+      font-family: inherit;
       display: block;
       margin: 3rem auto;
-      width: 90%; }
+      width: 50%; }
     .contact__form__label {
       color: #f7f7d2;
       display: block;
       font-size: 1.6rem;
-      margin: 1.5rem 47%; }
+      font-family: inherit;
+      margin: 1rem 0;
+      text-align: center; }
     .contact__form__input {
       background-color: rgba(255, 255, 255, 0.5);
       border: none;
@@ -175,6 +182,7 @@ body {
       color: #f7f7d2;
       display: block;
       font-size: 1.5rem;
+      font-family: inherit;
       margin: 0 auto;
       padding: 1.5rem 2rem;
       width: 90%; }
