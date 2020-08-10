@@ -1,6 +1,6 @@
 .about {
   height: 50rem;
-  padding: 1rem;
+  padding: 2rem;
   width: 100vw;
 
   @include respond(tab-land) {
@@ -9,7 +9,7 @@
 
   &__heading {
     color: black;
-    font-size: large;
+    font-size: 7rem;
     margin: 1rem;
     text-align: center;
     text-transform: uppercase;

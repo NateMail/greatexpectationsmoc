@@ -4,7 +4,7 @@ import defaultAbout from "../photos/about/defaultAbout.jpg";
 const About = () => {
   return (
     <div className="about" id="about">
-      <h1 className="about__heading">About Us</h1>
+      <h2 className="about__heading">About Us</h2>
       <div className="about__float">
         <div className="about__pic-container">
           <img src={defaultAbout} alt="dog" className="about__pic" />

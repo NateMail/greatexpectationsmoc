@@ -90,14 +90,14 @@ body {
 
 .about {
   height: 50rem;
-  padding: 1rem;
+  padding: 2rem;
   width: 100vw; }
   @media only screen and (max-width: 75em) {
     .about {
       height: fit-content; } }
   .about__heading {
     color: black;
-    font-size: large;
+    font-size: 7rem;
     margin: 1rem;
     text-align: center;
     text-transform: uppercase; }
