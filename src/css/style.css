@@ -138,8 +138,18 @@ body {
 .contact {
   height: 100vh;
   width: 100vw; }
-  .contact__heading {
-    color: black; }
+  .contact__form {
+    border-radius: 3px; }
+    .contact__form__container {
+      background-color: red;
+      display: block; }
+    .contact__form__heading {
+      color: black; }
+    .contact__form__label {
+      margin: 0 49%; }
+    .contact__form__input {
+      display: block;
+      margin: 0 auto; }
 
 .footer {
   background-color: #655c56;
