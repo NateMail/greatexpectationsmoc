@@ -89,7 +89,7 @@ body {
         letter-spacing: 0.25rem; } }
 
 .about {
-  height: 50rem;
+  height: 75rem;
   padding: 2rem;
   width: 100vw; }
   @media only screen and (max-width: 75em) {
