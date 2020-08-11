@@ -199,11 +199,57 @@ body {
         color: #f7f7d2; }
 
 .footer {
-  background-color: #655c56;
-  height: 50vh;
-  width: 100vw; }
-  .footer__heading {
-    color: black; }
+  background-color: #b9e9d5;
+  font-size: 2.5rem;
+  padding: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
+  .footer__logo-box {
+    margin-bottom: 8rem;
+    text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
+  .footer__logo {
+    height: auto;
+    width: 5rem; }
+  .footer__nav {
+    display: inline-block;
+    padding: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__nav {
+        text-align: center;
+        width: 100%; } }
+  .footer__list {
+    list-style: none; }
+    .footer__list__item {
+      display: inline-block;
+      margin-top: 1rem; }
+      .footer__list__item:not(:last-child) {
+        margin-right: 1.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__list__item {
+          margin: 1rem; } }
+  .footer__a:link, .footer__a:visited {
+    background-color: #f7f7d2;
+    border-radius: 3px;
+    color: #0e1e31;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s; }
+  .footer__a:hover {
+    box-shadow: 1.2rem 0.7rem 0.7rem #000;
+    transform: scale(1.2); }
+  .footer__author {
+    padding: 2rem;
+    float: right;
+    width: 80%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__author {
+        float: none;
+        width: 100%; } }
 
 .header {
   background: url("../photos/header/library.jpg");
@@ -394,6 +440,7 @@ body {
     box-shadow: 1rem 0.5rem 0.5rem #000;
     margin: 0 auto;
     height: 27rem;
+    transition: all 0.5s;
     width: 20rem; }
     .services__card:hover {
       box-shadow: 1.2rem 0.7rem 0.7rem #000;
