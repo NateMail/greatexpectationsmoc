@@ -13,7 +13,7 @@
     background-color: $color-navy;
     box-shadow: 1rem 1rem 1rem $color-black;
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 1.5rem;
     width: 50%;
 
@@ -30,13 +30,29 @@
 
     &__button {
       background-color: $color-pale-yellow;
-      border-radius: 2px;
+      border-radius: 3px;
       border-color: none;
       color: $color-navy;
       font-family: inherit;
+      font-size: 2rem;
       display: block;
       margin: 3rem auto;
+      transition: all 0.3s;
       width: 50%;
+    }
+
+    &__button:hover {
+      transform: scale(1.2);
+    }
+
+    &__button:focus {
+      outline: none;
+    }
+
+    &__button:active {
+      border-color: none;
+      opacity: 0;
+      transform: scale(0.5);
     }
 
     &__label {

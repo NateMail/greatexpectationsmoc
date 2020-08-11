@@ -40,7 +40,7 @@ export default function Contact() {
           <label className="contact__form__label">Message</label>
           <textarea
             name="message"
-            placeholder="Message"
+            placeholder="What service are you looking for?"
             className="contact__form__input"
           />
           <input className="contact__form__button" type="submit" value="Send" />

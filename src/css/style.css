@@ -147,7 +147,7 @@ body {
     background-color: #0e1e31;
     box-shadow: 1rem 1rem 1rem #000;
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 1.5rem;
     width: 50%; }
     @media only screen and (max-width: 56.25em) {
@@ -160,13 +160,23 @@ body {
       text-align: center; }
     .contact__form__button {
       background-color: #f7f7d2;
-      border-radius: 2px;
+      border-radius: 3px;
       border-color: none;
       color: #0e1e31;
       font-family: inherit;
+      font-size: 2rem;
       display: block;
       margin: 3rem auto;
+      transition: all 0.3s;
       width: 50%; }
+    .contact__form__button:hover {
+      transform: scale(1.2); }
+    .contact__form__button:focus {
+      outline: none; }
+    .contact__form__button:active {
+      border-color: none;
+      opacity: 0;
+      transform: scale(0.5); }
     .contact__form__label {
       color: #f7f7d2;
       display: block;
