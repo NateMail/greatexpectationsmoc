@@ -199,7 +199,7 @@ body {
         color: #f7f7d2; }
 
 .footer {
-  background-color: #b9e9d5;
+  background-color: #0e1e31;
   font-size: 2.5rem;
   padding: 10rem; }
   @media only screen and (max-width: 56.25em) {
@@ -243,8 +243,10 @@ body {
     box-shadow: 1.2rem 0.7rem 0.7rem #000;
     transform: scale(1.2); }
   .footer__author {
+    color: #f7f7d2;
     padding: 2rem;
     float: right;
+    text-align: center;
     width: 80%; }
     @media only screen and (max-width: 56.25em) {
       .footer__author {

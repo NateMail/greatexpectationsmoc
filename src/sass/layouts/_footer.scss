@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-mint;
+  background-color: $color-navy;
   font-size: 2.5rem;
   padding: 10rem;
 
@@ -67,8 +67,10 @@
   }
 
   &__author {
+    color: $color-pale-yellow;
     padding: 2rem;
     float: right;
+    text-align: center;
     width: 80%;
 
     @include respond(tab-port) {

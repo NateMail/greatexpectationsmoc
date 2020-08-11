@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <div className="col-1-of-2">
           <p className="footer__author">
-            This website was built by{" "}
+            This website was built by
             <a href="https://www.natemailhiot.com/" className="footer__a">
               Nate Mailhiot
             </a>
