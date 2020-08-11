@@ -128,7 +128,7 @@ body {
     display: block;
     font-size: 1.5rem; }
   .about__text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     height: 100%;
     hyphens: auto; }
     @media only screen and (max-width: 37.5em) {
@@ -386,14 +386,14 @@ body {
   .services__tertiary {
     font-size: 5rem; }
   .services__text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem; }
   .services__card {
     background-color: #0e1e31;
     border-radius: 0.3rem;
     box-shadow: 1rem 0.5rem 0.5rem #000;
     margin: 0 auto;
-    height: 25rem;
+    height: 27rem;
     width: 20rem; }
     .services__card:hover {
       box-shadow: 1.2rem 0.7rem 0.7rem #000;
@@ -413,10 +413,34 @@ body {
 
 .rates {
   background-color: #b9e9d5;
-  height: 100vh;
+  height: 70vh;
+  position: relative;
   width: 100vw; }
+  @media only screen and (max-width: 75em) {
+    .rates {
+      height: 60vh; } }
+  .rates__container {
+    background-color: #f7f7d2;
+    border-radius: 3px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; }
   .rates__heading {
-    color: black; }
+    color: #0e1e31;
+    font-size: 7rem;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .rates__message {
+    color: #0e1e31;
+    font-size: 5rem;
+    hyphens: auto;
+    margin: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .rates__message {
+        font-size: 2.5rem; } }
 
 .App {
   overflow: hidden; }

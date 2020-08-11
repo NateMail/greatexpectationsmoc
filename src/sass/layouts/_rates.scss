@@ -1,9 +1,39 @@
 .rates {
   background-color: $color-mint;
-  height: 100vh;
+  height: 70vh;
+  position: relative;
   width: 100vw;
 
+  @include respond(tab-land) {
+    height: 60vh;
+  }
+
+  &__container {
+    background-color: $color-pale-yellow;
+    border-radius: 3px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
   &__heading {
-    color: black;
+    color: $color-navy;
+    font-size: 7rem;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__message {
+    color: $color-navy;
+    font-size: 5rem;
+    hyphens: auto;
+    margin: 1rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
 }
