@@ -25,18 +25,23 @@ const About = () => {
         application essays/personal statements. With the advent of remote
         learning this year, Allison has also assisted students with academic
         subjects including middle and high school math, English, and social
-        studies/history. Allison understands the South Shore, its local schools
-        and its students well, having worked with students from almost every
-        town and middle school/high school (public and private) over the years.
-        Allison grew up in South Weymouth and graduated from Notre Dame Academy
-        in Hingham. She holds a B.A. from The College of William and Mary and an
-        M.A./J.D. from Syracuse University. She is currently enrolled in the
-        College Counseling certificate program at Rice University. In her spare
-        time, Allison enjoys spending time with her husband, two step-children,
-        their dog and two cats. She is also actively involved in the community
-        as a member of the Board Nominating and Development Committee of the
-        Girl Scouts of Eastern Massachusetts and as a sustaining member of The
-        Junior League of Boston.
+        studies/history.
+        <br />
+        <br />
+        Allison understands the South Shore, its local schools and its students
+        well, having worked with students from almost every town and middle
+        school/high school (public and private) over the years. Allison grew up
+        in South Weymouth and graduated from Notre Dame Academy in Hingham. She
+        holds a B.A. from The College of William and Mary and an M.A./J.D. from
+        Syracuse University. She is currently enrolled in the College Counseling
+        certificate program at Rice University.
+        <br />
+        <br />
+        In her spare time, Allison enjoys spending time with her husband, two
+        step-children, their dog and two cats. She is also actively involved in
+        the community as a member of the Board Nominating and Development
+        Committee of the Girl Scouts of Eastern Massachusetts and as a
+        sustaining member of The Junior League of Boston.
       </p>
     </div>
   );
