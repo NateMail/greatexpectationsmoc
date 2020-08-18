@@ -11,7 +11,7 @@ const Services = () => {
     <div className="services" id="services">
       <div>
         <div className="services__box-1">
-          <h3 className="services__tertiary">SAT Prep</h3>
+          <h3 className="services__tertiary"> Test Prep</h3>
           <TiEdit className="services__icon" />
           <p className="services__text">
             Great Expectations offers test preparation services that are
