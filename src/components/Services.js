@@ -110,6 +110,13 @@ const Services = () => {
             <div className="col-1-of-4">
               <div className="services__card">
                 <h4 className="services__card__header">French (all levels)</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">French 1</li>
+                  <li className="services__card__list__item">French 2</li>
+                  <li className="services__card__list__item">French 3</li>
+
+                  <li className="services__card__list__item">AP French</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -175,6 +182,13 @@ const Services = () => {
             <div className="col-1-of-4">
               <div className="services__card">
                 <h4 className="services__card__header">French (all levels)</h4>
+                <ul className="services__card__list">
+                  <li className="services__card__list__item">French 1</li>
+                  <li className="services__card__list__item">French 2</li>
+                  <li className="services__card__list__item">French 3</li>
+
+                  <li className="services__card__list__item">AP French</li>
+                </ul>
               </div>
             </div>
           </div>
