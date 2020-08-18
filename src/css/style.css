@@ -496,10 +496,17 @@ body {
     background-color: #f7f7d2;
     border-radius: 3px;
     left: 50%;
+    margin-top: 5rem;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 90%; }
+    @media only screen and (max-width: 56.25em) {
+      .rates__container {
+        margin-top: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .rates__container {
+        margin-top: 5rem; } }
   .rates__heading {
     color: #0e1e31;
     font-size: 7rem;
@@ -509,6 +516,14 @@ body {
     @media only screen and (max-width: 56.25em) {
       .rates__heading {
         margin: 1.5rem; } }
+  .rates__icon {
+    display: inline-block;
+    font-size: 10rem;
+    width: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .rates__icon {
+        font-size: 7rem;
+        margin-top: -2rem; } }
   .rates__message {
     color: #0e1e31;
     font-size: 5rem;

@@ -1,9 +1,11 @@
 import React from "react";
+import { TiTick } from "react-icons/ti";
 
 const Rates = () => {
   return (
     <div className="rates" id="rates">
       <h2 className="rates__heading">Rates</h2>
+      <TiTick className="rates__icon" />
       <div className="rates__container">
         <p className="rates__message">
           Our rates vary depending on the length and content of the sessions,
