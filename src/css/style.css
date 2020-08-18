@@ -89,8 +89,8 @@ body {
         letter-spacing: 0.25rem; } }
 
 .about {
-  height: 75rem;
-  padding: 2rem;
+  height: fit-content;
+  padding: 5rem;
   width: 100vw; }
   @media only screen and (max-width: 75em) {
     .about {
@@ -111,6 +111,18 @@ body {
         display: flex;
         float: none;
         justify-content: center; } }
+  .about__float--left {
+    display: block;
+    float: left;
+    margin: 0.5rem 0.3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__float--left {
+        align-items: center;
+        display: flex;
+        float: none;
+        justify-content: center; } }
+  .about__divider {
+    margin-top: 5rem; }
   .about__pic-container {
     display: inline-block;
     margin: 0.5rem 3rem;
@@ -130,10 +142,12 @@ body {
   .about__text {
     font-size: 2.5rem;
     height: 100%;
-    hyphens: auto; }
+    hyphens: auto;
+    text-indent: 5rem; }
     @media only screen and (max-width: 37.5em) {
       .about__text {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        text-indent: 2.5rem; } }
 
 .contact {
   height: fit-content;

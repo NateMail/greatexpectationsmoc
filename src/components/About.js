@@ -1,5 +1,6 @@
 import React from "react";
 import defaultAbout from "../photos/about/defaultAbout.jpg";
+import secondAbout from "../photos/about/secondAbout.jpg";
 
 const About = () => {
   return (
@@ -26,8 +27,9 @@ const About = () => {
         learning this year, Allison has also assisted students with academic
         subjects including middle and high school math, English, and social
         studies/history.
-        <br />
-        <br />
+      </p>
+      <br />
+      <p className="about__text">
         Allison understands the South Shore, its local schools and its students
         well, having worked with students from almost every town and middle
         school/high school (public and private) over the years. Allison grew up
@@ -35,14 +37,47 @@ const About = () => {
         holds a B.A. from The College of William and Mary and an M.A./J.D. from
         Syracuse University. She is currently enrolled in the College Counseling
         certificate program at Rice University.
-        <br />
-        <br />
+      </p>
+      <br />
+      <p className="about__text">
         In her spare time, Allison enjoys spending time with her husband, two
         step-children, their dog and two cats. She is also actively involved in
         the community as a member of the Board Nominating and Development
         Committee of the Girl Scouts of Eastern Massachusetts and as a
         sustaining member of The Junior League of Boston.
       </p>
+      <div className="about__divider">
+        <div className="about__float--left">
+          <div className="about__pic-container">
+            <img src={secondAbout} alt="dog" className="about__pic" />
+            <span className="about__pic-label">Gabe Parker</span>
+          </div>
+        </div>
+        <p className="about__text">
+          Gabe Parker brings a plethora of tutoring and teaching experiences to
+          Great Expectations. A graduate of The College of William and Mary,
+          Gabe has been licensed to teach in Massachusetts since 2003. During
+          that time, he has tutored students from the third through tenth grades
+          both at Sylvan Learning Centers in Rhode Island and privately. Gabe is
+          a self professed “history nerd,” and history and social studies are
+          his favorite subjects to tutor. That said, Gabe is also experienced
+          tutoring reading, English, math and sciences through the tenth-grade
+          level.
+        </p>
+        <br />
+        <p className="about__text">
+          Gabe is currently finishing up his executive MBA through William and
+          Mary, and uses his knowledge to handle the day-to-day business of
+          running Great Expectations. He loves working with kids even outside of
+          tutoring, and served for a number of years as a Little League coach.
+          He is presently on the Board of Advisors of the South Boston
+          Neighborhood House. Gabe resides locally with his wife, two children
+          and their many pets. In his spare time, he enjoys fishing (especially
+          off of Chatham, where he spent all of his childhood summers), and
+          touring Civil War battlefields (underscoring the nerd in history
+          nerd).
+        </p>
+      </div>
     </div>
   );
 };
