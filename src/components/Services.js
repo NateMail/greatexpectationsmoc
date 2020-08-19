@@ -142,9 +142,12 @@ const Services = () => {
             are learning from home, Great Expectations can help you concentrate
             on your work. Leave the teaching to us. You do your job and let us
             do ours. Remote/hybrid learning assistance is currently available
-            for the following subjects and for students in elementary school
-            through high school:
+            for the following subjects seen above.
           </p>
+          {/* 
+          
+          TAKEN OUT TO AVOID REPEATING 
+
           <div className="row">
             <div className="col-1-of-4">
               <div className="services__card">
@@ -191,7 +194,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div>
