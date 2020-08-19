@@ -135,7 +135,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .about__pic {
         border-right: 0.3rem;
-        margin: 0.5rem; } }
+        height: 30rem;
+        margin: 0.5rem;
+        width: 30rem; } }
   .about__pic-label {
     display: block;
     font-size: 1.5rem; }
