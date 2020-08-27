@@ -7,8 +7,7 @@ export default function Contact() {
   const [userEmail, setUserEmail] = useState("");
   const [userTown, setUserTown] = useState("");
   const [userMessage, setUserMessage] = useState("");
-  const [error, setError] = useState("");
-  const [submit, setSubmit] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -17,23 +16,27 @@ export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    userName.length > 1
-      ? setSubmit(true) && setError("")
-      : setSubmit(false) && setError("Name Required");
+    if (!reg.test(String(userEmail).toLocaleLowerCase())) {
+      setErrorMessage("Email Required");
+    }
 
-    userEmail.length
-      ? setSubmit(true) && setError("")
-      : setSubmit(false) && setError("Email Required");
+    if (userName.length <= 0) {
+      setErrorMessage("Name Required");
+    }
 
-    userTown.length > 1
-      ? setSubmit(true) && setError("")
-      : setSubmit(false) && setError("Town Required");
+    if (userTown.length <= 0) {
+      setErrorMessage("Town Required");
+    }
 
-    userMessage.length > 1
-      ? setSubmit(true) && setError("")
-      : setSubmit(false) && setError("Message Required");
+    if (userMessage.length <= 0) {
+      setErrorMessage("Message Required");
+    }
 
-    if (submit && error !== "") {
+    if (errorMessage) {
+      console.log(errorMessage);
+    }
+
+    if (errorMessage === "") {
       emailjs
         .sendForm(
           "gmail",
@@ -48,8 +51,7 @@ export default function Contact() {
             setUserTown("");
             setUserEmail("");
             setUserMessage("");
-            setSubmit(false);
-            setError("");
+            setErrorMessage("");
           },
           (error) => {
             console.log(error.text);
@@ -58,28 +60,20 @@ export default function Contact() {
     }
   }
 
-  console.log(userName);
-  console.log(userEmail);
-  console.log(userTown);
-  console.log(userMessage);
-
   function change(e) {
-    if (e.target.name === "user_name") {
+    if (e.target.name === "user_name" && e.target.value.length >= 0) {
       setUserName(e.target.value);
     }
 
-    if (e.target.name === "user_email") {
+    if (e.target.name === "user_email" && e.target.value.length >= 0) {
       setUserEmail(e.target.value);
-      reg.test(String(userEmail).toLocaleLowerCase())
-        ? setSubmit(true)
-        : setSubmit(false);
     }
 
-    if (e.target.name === "user_town") {
+    if (e.target.name === "user_town" && e.target.value.length >= 0) {
       setUserTown(e.target.value);
     }
 
-    if (e.target.name === "user_message") {
+    if (e.target.name === "user_message" && e.target.value.length >= 0) {
       setUserMessage(e.target.value);
     }
   }
