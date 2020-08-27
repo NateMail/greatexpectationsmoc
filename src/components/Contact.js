@@ -37,6 +37,13 @@ export default function Contact() {
             placeholder="Email"
             className="contact__form__input"
           />
+          <label className="contact__form__label">Town</label>
+          <input
+            type="text"
+            name="user_town"
+            placeholder="Your town"
+            className="contact__form__input"
+          />
           <label className="contact__form__label">Message</label>
           <textarea
             name="message"
