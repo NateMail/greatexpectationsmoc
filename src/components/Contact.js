@@ -13,51 +13,56 @@ export default function Contact() {
 
   const { REACT_APP_EMAILJS_USERID, REACT_APP_EMAILJS_TEMPLATEID } = env;
 
-  function sendEmail(e) {
-    e.preventDefault();
+  function submitForm(event) {
+    event.preventDefault();
 
+    if (valid()) {
+      sendFeedback({
+        user_name: userName,
+        user_email: userEmail,
+        user_town: userTown,
+        user_message: userMessage,
+      });
+    }
+    console.log(errorMessage);
+  }
+
+  function valid() {
+    if (
+      userName === "" ||
+      userEmail === "" ||
+      userTown === "" ||
+      userMessage === ""
+    ) {
+      setErrorMessage("All fields required");
+      return false;
+    }
     if (!reg.test(String(userEmail).toLocaleLowerCase())) {
-      setErrorMessage("Email Required");
+      return false;
     }
+    return true;
+  }
 
-    if (userName.length <= 0) {
-      setErrorMessage("Name Required");
-    }
-
-    if (userTown.length <= 0) {
-      setErrorMessage("Town Required");
-    }
-
-    if (userMessage.length <= 0) {
-      setErrorMessage("Message Required");
-    }
-
-    if (errorMessage) {
-      console.log(errorMessage);
-    }
-
-    if (errorMessage === "") {
-      emailjs
-        .sendForm(
-          "gmail",
-          REACT_APP_EMAILJS_TEMPLATEID,
-          e.target,
-          REACT_APP_EMAILJS_USERID
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setUserName("");
-            setUserTown("");
-            setUserEmail("");
-            setUserMessage("");
-            setErrorMessage("");
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    }
+  function sendFeedback(variables) {
+    emailjs
+      .send(
+        "gmail",
+        REACT_APP_EMAILJS_TEMPLATEID,
+        variables,
+        REACT_APP_EMAILJS_USERID
+      )
+      .then((res) => {
+        // Email successfully sent alert
+        console.log("Email Successfully Sent");
+        setUserName("");
+        setUserEmail("");
+        setUserTown("");
+        setUserMessage("");
+        setErrorMessage("");
+      })
+      .catch((err) => {
+        console.log("Email Failed to Send");
+      });
   }
 
   function change(e) {
@@ -78,11 +83,15 @@ export default function Contact() {
     }
   }
 
+  // if (errorMessage.length > 0) {
+  //   return <div>{errorMessage}</div>;
+  // }
+
   return (
     <div className="contact" id="contact">
       <div className="contact__container">
         <h2 className="contact__form__heading">Contact Us</h2>
-        <form className="contact__form" onSubmit={sendEmail}>
+        <form className="contact__form" onSubmit={submitForm}>
           <input type="hidden" name="contact_number" />
           <label className="contact__form__label">Name</label>
           <input
