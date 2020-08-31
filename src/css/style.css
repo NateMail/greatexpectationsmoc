@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&family=Lora&display=swap");
 @keyframes moveInTop {
   0% {
     opacity: 0;
@@ -50,7 +50,7 @@ html {
 body {
   background-color: #ededed;
   box-sizing: border-box;
-  font-family: "IM Fell Great Primer", serif;
+  font-family: "Lora", serif;
   padding: 1rem; }
   @media only screen and (max-width: 56.25em) {
     body {
@@ -62,6 +62,7 @@ body {
 
 .heading-primary {
   color: #f7f7d2;
+  font-family: "IM Fell Great Primer", serif;
   margin: 3rem 5rem;
   text-transform: uppercase; }
   @media only screen and (max-width: 37.5em) {
@@ -98,6 +99,7 @@ body {
       height: fit-content; } }
   .about__heading {
     color: black;
+    font-family: "IM Fell Great Primer", serif;
     font-size: 7rem;
     margin: 1rem;
     text-align: center;
@@ -172,6 +174,7 @@ body {
         width: 100%; } }
     .contact__form__heading {
       color: #0e1e31;
+      font-family: "IM Fell Great Primer", serif;
       font-size: 7rem;
       margin-bottom: 1rem;
       text-align: center; }
@@ -228,6 +231,7 @@ body {
 
 .footer {
   background-color: #0e1e31;
+  font-family: "IM Fell Great Primer", serif;
   font-size: 2.5rem;
   padding: 10rem; }
   @media only screen and (max-width: 56.25em) {
@@ -284,6 +288,7 @@ body {
 .header {
   background: url("../photos/header/library.jpg");
   background-size: cover;
+  font-family: "IM Fell Great Primer", serif;
   margin-top: 5.5rem;
   height: 70vh;
   width: 100vw; }
@@ -353,6 +358,7 @@ body {
 
 .nav {
   background-color: #0e1e31;
+  font-family: "IM Fell Great Primer", serif;
   left: 0;
   overflow: hidden;
   position: fixed;
@@ -460,6 +466,7 @@ body {
   .services__icon {
     font-size: 10rem; }
   .services__tertiary {
+    font-family: "IM Fell Great Primer", serif;
     font-size: 5rem; }
   .services__text {
     font-size: 2.5rem;
@@ -513,6 +520,7 @@ body {
         margin-top: 5rem; } }
   .rates__heading {
     color: #0e1e31;
+    font-family: "IM Fell Great Primer", serif;
     font-size: 7rem;
     margin: 1rem;
     text-align: center;
