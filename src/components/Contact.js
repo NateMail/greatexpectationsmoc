@@ -9,7 +9,7 @@ export default function Contact() {
   const [userMessage, setUserMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const reg = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const { REACT_APP_EMAILJS_USERID, REACT_APP_EMAILJS_TEMPLATEID } = env;
 
@@ -23,8 +23,9 @@ export default function Contact() {
         user_town: userTown,
         user_message: userMessage,
       });
+    } else {
+      setErrorMessage("All feilds required!");
     }
-    console.log(errorMessage);
   }
 
   function valid() {
@@ -34,10 +35,17 @@ export default function Contact() {
       userTown === "" ||
       userMessage === ""
     ) {
-      setErrorMessage("All fields required");
+      setErrorMessage("All fields required!");
+      setTimeout(function () {
+        setErrorMessage("");
+      }, 2000);
       return false;
     }
     if (!reg.test(String(userEmail).toLocaleLowerCase())) {
+      setErrorMessage("All fields required!");
+      setTimeout(function () {
+        setErrorMessage("");
+      }, 2000);
       return false;
     }
     return true;
@@ -52,16 +60,17 @@ export default function Contact() {
         REACT_APP_EMAILJS_USERID
       )
       .then((res) => {
-        // Email successfully sent alert
-        console.log("Email Successfully Sent");
         setUserName("");
         setUserEmail("");
         setUserTown("");
         setUserMessage("");
-        setErrorMessage("");
+        setErrorMessage("Sent sucessfully!");
+        setTimeout(function () {
+          setErrorMessage("");
+        }, 2000);
       })
       .catch((err) => {
-        console.log("Email Failed to Send");
+        setErrorMessage("All fields required!");
       });
   }
 
@@ -83,14 +92,17 @@ export default function Contact() {
     }
   }
 
-  // if (errorMessage.length > 0) {
-  //   return <div>{errorMessage}</div>;
-  // }
+  const errorMessaging = (msg) => {
+    if (msg.length > 0) {
+      return <p className="contact__error__message">{msg}</p>;
+    }
+  };
 
   return (
     <div className="contact" id="contact">
       <div className="contact__container">
         <h2 className="contact__form__heading">Contact Us</h2>
+        <div className="contact__error">{errorMessaging(errorMessage)}</div>
         <form className="contact__form" onSubmit={submitForm}>
           <input type="hidden" name="contact_number" />
           <label className="contact__form__label">Name</label>
