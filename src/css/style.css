@@ -35,7 +35,8 @@
   padding: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -186,6 +187,7 @@ body {
       transition: all 0.3s;
       width: 50%; }
     .contact__form__button:hover {
+      box-shadow: 0.5rem 0.7rem 0.7rem #000;
       transform: scale(1.2); }
     .contact__form__button:focus {
       outline: none; }
