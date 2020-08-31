@@ -538,15 +538,15 @@ body {
         margin-top: -2rem; } }
   .rates__message {
     color: #0e1e31;
-    font-size: 5rem;
+    font-size: 4rem;
     hyphens: auto;
     margin: 1rem; }
     @media only screen and (max-width: 75em) {
       .rates__message {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .rates__message {
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .rates__message {
         font-size: 2.5rem; } }
