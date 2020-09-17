@@ -1,6 +1,4 @@
 import React from "react";
-import defaultAbout from "../photos/about/defaultAbout.jpg";
-import secondAbout from "../photos/about/secondAbout.jpg";
 
 const About = () => {
   return (
@@ -8,7 +6,7 @@ const About = () => {
       <h2 className="about__heading">About Us</h2>
       <div className="about__float">
         <div className="about__pic-container">
-          <img src={defaultAbout} alt="dog" className="about__pic" />
+          <div className="about__pic"></div>
           <span className="about__pic-label">Founder Allison Walsh</span>
         </div>
       </div>
@@ -49,7 +47,7 @@ const About = () => {
       <div className="about__divider">
         <div className="about__float--left">
           <div className="about__pic-container">
-            <img src={secondAbout} alt="dog" className="about__pic" />
+            <div className="about__pic-2"></div>
             <span className="about__pic-label">Gabe Parker</span>
           </div>
         </div>
