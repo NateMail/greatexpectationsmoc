@@ -4,9 +4,6 @@ import logo from "../photos/header/logo.jpg";
 const Footer = () => {
   return (
     <div className="footer" id="footer">
-      <div className="footer__logo-box">
-        <img src={logo} alt="logo" className="footer__logo" />
-      </div>
       <div className="row">
         <div className="col-1-of-2">
           <div className="footer__nav">
