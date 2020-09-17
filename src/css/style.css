@@ -23,7 +23,7 @@
   0% {
     background-color: transparent; }
   100% {
-    background-color: rgba(14, 30, 49, 0.8);
+    background-color: rgba(14, 30, 49, 0.9);
     border-radius: 0.3rem;
     text-align: center; } }
 
@@ -491,7 +491,7 @@ body {
     width: 20rem; }
     .services__card:hover {
       box-shadow: 1.2rem 0.7rem 0.7rem #000;
-      transform: scale(1.2); }
+      transform: scale(1.1); }
     .services__card__header {
       color: #f7f7d2;
       border-bottom: 1px solid #f7f7d2;

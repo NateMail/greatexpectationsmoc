@@ -48,7 +48,9 @@ const About = () => {
         <div className="about__float--left">
           <div className="about__pic-container">
             <div className="about__pic-2"></div>
-            <span className="about__pic-label">Gabe Parker</span>
+            <span className="about__pic-label">
+              Allison Walsh & Gabe Parker
+            </span>
           </div>
         </div>
         <p className="about__text">
