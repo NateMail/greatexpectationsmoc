@@ -32,6 +32,19 @@ const Footer = () => {
                   Contact
                 </a>
               </li>
+              <li className="footer__list__item">
+                <a href="tel:781-783-7565" className="footer__a">
+                  781-783-7565
+                </a>
+              </li>
+              <li className="footer__list__item">
+                <a
+                  href="mailto:greatexpectationssouthshore@gmail.com"
+                  className="footer__a"
+                >
+                  email
+                </a>
+              </li>
             </ul>
           </div>
         </div>
