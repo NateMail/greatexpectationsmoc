@@ -26,10 +26,17 @@ const Rates = () => {
             at local libraries, at their boarding schools and at other mutually
             convenient locations for years. For in-home tutoring, we are a
             completely dog and cat friendly organization and would love to meet
-            your furry companions. We understand that the pets sometimes want to
-            be in the room with their student for tutoring and that’s ok too.
-            We’re flexible like that.
+            your furry companions.
           </p>
+          <div className="types__container">
+            <div className="types__img"></div>
+            <span className="types__img-label">Jewel our dog</span>
+            <p className="types__img-text">
+              We understand that the pets sometimes want to be in the room with
+              their student for tutoring and that’s ok too. We’re flexible like
+              that.
+            </p>
+          </div>
           <p className="types__message--2">
             We also continue to offer these in-person services during the
             Covid-19 pandemic with the following caveats:
