@@ -5,7 +5,7 @@
   position: relative;
   width: 100vw;
 
-  @include respond(phone) {
+  @include respond(tab-land) {
     height: fit-content;
     padding: 2rem;
   }
@@ -22,15 +22,6 @@
     width: 90%;
 
     @include respond(tab-land) {
-      margin-top: 2rem;
-      height: 90%;
-    }
-
-    @include respond(tab-port) {
-      margin-top: 6rem;
-    }
-
-    @include respond(phone) {
       display: block;
       height: fit-content;
       position: relative;
