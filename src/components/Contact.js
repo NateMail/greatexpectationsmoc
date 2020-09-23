@@ -24,7 +24,7 @@ export default function Contact() {
         user_message: userMessage,
       });
     } else {
-      setErrorMessage("All feilds required!");
+      setErrorMessage("All fields required!");
     }
   }
 
