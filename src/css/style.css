@@ -93,6 +93,7 @@ body {
 .about {
   height: fit-content;
   padding: 5rem;
+  margin-bottom: 8rem;
   width: 100vw; }
   @media only screen and (max-width: 75em) {
     .about {
@@ -507,27 +508,40 @@ body {
 
 .rates {
   background-color: #b9e9d5;
-  height: 70vh;
+  border-top: 5px solid black;
+  height: 110vh;
   position: relative;
   width: 100vw; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 37.5em) {
     .rates {
-      height: 60vh; } }
+      height: fit-content;
+      padding: 2rem; } }
   .rates__container {
     background-color: #f7f7d2;
     border-radius: 3px;
+    height: 85%;
     left: 50%;
     margin-top: 5rem;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 90%; }
+    @media only screen and (max-width: 75em) {
+      .rates__container {
+        margin-top: 2rem;
+        height: 90%; } }
     @media only screen and (max-width: 56.25em) {
       .rates__container {
-        margin-top: 0; } }
+        margin-top: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .rates__container {
-        margin-top: 5rem; } }
+        display: block;
+        height: fit-content;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0%, 0%);
+        margin: 0 auto; } }
   .rates__heading {
     color: #0e1e31;
     font-family: "IM Fell Great Primer", serif;
@@ -538,28 +552,166 @@ body {
     @media only screen and (max-width: 56.25em) {
       .rates__heading {
         margin: 1.5rem; } }
-  .rates__icon {
-    display: inline-block;
-    font-size: 10rem;
-    width: 100%; }
     @media only screen and (max-width: 37.5em) {
-      .rates__icon {
-        font-size: 7rem;
-        margin-top: -2rem; } }
+      .rates__heading {
+        font-size: 5rem; } }
   .rates__message {
     color: #0e1e31;
-    font-size: 4rem;
+    font-size: 2rem;
     hyphens: auto;
-    margin: 1rem; }
+    margin: 1rem;
+    text-align: center; }
     @media only screen and (max-width: 75em) {
       .rates__message {
+        margin: 0;
+        margin-top: 1rem;
         font-size: 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .rates__message {
         font-size: 2.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .rates__message {
-        font-size: 2.5rem; } }
+        font-size: 1.6rem;
+        margin: 1rem; } }
+
+.conditions__heading {
+  border-top: 5px solid black;
+  color: #0e1e31;
+  font-family: "IM Fell Great Primer", serif;
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 75em) {
+    .conditions__heading {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .conditions__heading {
+      font-size: 3rem;
+      margin: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .conditions__heading {
+      font-size: 2rem;
+      margin: 1rem; } }
+
+.conditions__message {
+  color: #0e1e31;
+  font-size: 2rem;
+  hyphens: auto;
+  margin: 1rem;
+  text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .conditions__message {
+      margin: 0;
+      font-size: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .conditions__message {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .conditions__message {
+      font-size: 1.6rem;
+      margin: 1rem; } }
+
+.types__heading {
+  border-top: 5px solid black;
+  color: #0e1e31;
+  font-family: "IM Fell Great Primer", serif;
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 75em) {
+    .types__heading {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .types__heading {
+      font-size: 3rem;
+      margin: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .types__heading {
+      font-size: 2rem;
+      margin: 1rem; } }
+
+.types__list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+  @media only screen and (max-width: 37.5em) {
+    .types__list {
+      display: block; } }
+
+.types__item {
+  color: #0e1e31;
+  font-size: 1.6rem;
+  hyphens: auto;
+  margin: 1rem;
+  padding: 1rem; }
+  @media only screen and (max-width: 75em) {
+    .types__item {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .types__item {
+      font-size: 1.6rem; } }
+
+.types__item:nth-child(1), .types__item:nth-child(2), .types__item:nth-child(3) {
+  border-right: 3px solid black; }
+  @media only screen and (max-width: 37.5em) {
+    .types__item:nth-child(1), .types__item:nth-child(2), .types__item:nth-child(3) {
+      border-right: none;
+      border-bottom: 3px solid black; } }
+
+.types__message--2 {
+  border-bottom: 3px solid black;
+  padding-bottom: 1rem; }
+
+.types__message--1, .types__message--2, .types__message--3 {
+  color: #0e1e31;
+  font-size: 2rem;
+  hyphens: auto;
+  margin: 1rem;
+  text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .types__message--1, .types__message--2, .types__message--3 {
+      font-size: 3rem;
+      margin: 0; } }
+  @media only screen and (max-width: 75em) {
+    .types__message--1, .types__message--2, .types__message--3 {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .types__message--1, .types__message--2, .types__message--3 {
+      font-size: 1.6rem;
+      margin: 1rem; } }
+
+.sessions__heading {
+  border-top: 5px solid black;
+  color: #0e1e31;
+  font-family: "IM Fell Great Primer", serif;
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .sessions__heading {
+      font-size: 2rem; } }
+
+.sessions__message {
+  color: #0e1e31;
+  font-size: 2rem;
+  hyphens: auto;
+  margin: 1rem;
+  text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .sessions__message {
+      font-size: 3rem;
+      margin: 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .sessions__message {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .sessions__message {
+      font-size: 1.6rem;
+      margin: 1rem; } }
 
 .App {
   overflow: hidden; }

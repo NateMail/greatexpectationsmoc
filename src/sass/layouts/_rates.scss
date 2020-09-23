@@ -1,16 +1,19 @@
 .rates {
   background-color: $color-mint;
-  height: 70vh;
+  border-top: 5px solid black;
+  height: 110vh;
   position: relative;
   width: 100vw;
 
-  @include respond(tab-land) {
-    height: 60vh;
+  @include respond(phone) {
+    height: fit-content;
+    padding: 2rem;
   }
 
   &__container {
     background-color: $color-pale-yellow;
     border-radius: 3px;
+    height: 85%;
     left: 50%;
     margin-top: 5rem;
     position: absolute;
@@ -18,12 +21,23 @@
     transform: translate(-50%, -50%);
     width: 90%;
 
+    @include respond(tab-land) {
+      margin-top: 2rem;
+      height: 90%;
+    }
+
     @include respond(tab-port) {
-      margin-top: 0;
+      margin-top: 6rem;
     }
 
     @include respond(phone) {
-      margin-top: 5rem;
+      display: block;
+      height: fit-content;
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: translate(0%, 0%);
+      margin: 0 auto;
     }
   }
 
@@ -38,27 +52,22 @@
     @include respond(tab-port) {
       margin: 1.5rem;
     }
-  }
-
-  &__icon {
-    display: inline-block;
-    font-size: 10rem;
-
-    width: 100%;
 
     @include respond(phone) {
-      font-size: 7rem;
-      margin-top: -2rem;
+      font-size: 5rem;
     }
   }
 
   &__message {
     color: $color-navy;
-    font-size: 4rem;
+    font-size: 2rem;
     hyphens: auto;
     margin: 1rem;
+    text-align: center;
 
     @include respond(tab-land) {
+      margin: 0;
+      margin-top: 1rem;
       font-size: 3rem;
     }
 
@@ -67,7 +76,187 @@
     }
 
     @include respond(phone) {
+      font-size: 1.6rem;
+      margin: 1rem;
+    }
+  }
+}
+
+.conditions {
+  &__heading {
+    border-top: 5px solid black;
+    color: $color-navy;
+    font-family: $head-text;
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include respond(tab-land) {
+      font-size: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+  }
+
+  &__message {
+    color: $color-navy;
+    font-size: 2rem;
+    hyphens: auto;
+    margin: 1rem;
+    text-align: center;
+
+    @include respond(tab-land) {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    @include respond(tab-port) {
       font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+      margin: 1rem;
+    }
+  }
+}
+
+.types {
+  &__heading {
+    border-top: 5px solid black;
+    color: $color-navy;
+    font-family: $head-text;
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include respond(tab-land) {
+      font-size: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+  }
+
+  &__list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__item {
+    color: $color-navy;
+    font-size: 1.6rem;
+    hyphens: auto;
+    margin: 1rem;
+    padding: 1rem;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__item:nth-child(1),
+  &__item:nth-child(2),
+  &__item:nth-child(3) {
+    border-right: 3px solid black;
+
+    @include respond(phone) {
+      border-right: none;
+      border-bottom: 3px solid black;
+    }
+  }
+
+  &__message--2 {
+    border-bottom: 3px solid black;
+    padding-bottom: 1rem;
+  }
+
+  &__message--1,
+  &__message--2,
+  &__message--3 {
+    color: $color-navy;
+    font-size: 2rem;
+    hyphens: auto;
+    margin: 1rem;
+    text-align: center;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+      margin: 1rem;
+    }
+  }
+}
+
+.sessions {
+  &__heading {
+    border-top: 5px solid black;
+    color: $color-navy;
+    font-family: $head-text;
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &__message {
+    color: $color-navy;
+    font-size: 2rem;
+    hyphens: auto;
+    margin: 1rem;
+    text-align: center;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+      margin: 1rem;
     }
   }
 }
