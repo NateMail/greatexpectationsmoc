@@ -30,7 +30,7 @@ const Rates = () => {
           </p>
           <div className="types__container">
             <div className="types__img"></div>
-            <span className="types__img-label">Jewel our dog</span>
+            <span className="types__img-label">Our dog Jewel</span>
             <p className="types__img-text">
               We understand that the pets sometimes want to be in the room with
               their student for tutoring and that’s ok too. We’re flexible like
