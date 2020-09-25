@@ -621,7 +621,7 @@ body {
 .types__container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 0.3fr); }
+  grid-template-rows: repeat(6, 0.3fr); }
   @media only screen and (max-width: 37.5em) {
     .types__container {
       grid-template-columns: repeat(3, 1fr);
@@ -633,7 +633,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 80%;
-  grid-column: 2 / 4;
+  grid-column: 2 / 3;
   grid-row: 2 / 4;
   height: 25rem;
   width: 25rem; }
@@ -667,13 +667,13 @@ body {
 
 .types__img-text {
   color: #0e1e31;
-  font-size: 2rem;
-  grid-column: 4 / 6;
-  grid-row: 3 / 5; }
+  font-size: 3rem;
+  grid-column: 4 / 7;
+  grid-row: 3 / 6; }
   @media only screen and (max-width: 75em) {
     .types__img-text {
-      grid-row: 2 / 5;
-      font-size: 2.5rem; } }
+      grid-row: 2 / 6;
+      font-size: 3.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .types__img-text {
       font-size: 2rem;
