@@ -78,7 +78,7 @@ const Rates = () => {
             always complimentary so you can meet us, ask questions and see if we
             are the right fit for your student before making a commitment.
             Thereafter, sessions are available in 60- or 90-minute increments.
-            Please call or email for information about rates and packages.
+            Please call or email for information about rates and packages
           </p>
         </div>
       </div>
