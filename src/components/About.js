@@ -74,8 +74,7 @@ const About = () => {
           Neighborhood House. Gabe resides locally with his wife, two children
           and their many pets. In his spare time, he enjoys fishing (especially
           off of Chatham, where he spent all of his childhood summers), and
-          touring Civil War battlefields (underscoring the nerd in history
-          nerd).
+          touring Civil War battlefields (underscoring the nerd in history nerd)
         </p>
       </div>
     </div>
