@@ -1,14 +1,10 @@
 .rates {
   background-color: $color-mint;
   border-top: 5px solid black;
-  height: 150vh;
+  height: fit-content;
+  padding: 2rem;
   position: relative;
   width: 100vw;
-
-  @include respond(tab-land) {
-    height: fit-content;
-    padding: 2rem;
-  }
 
   &__container {
     background-color: $color-pale-yellow;
